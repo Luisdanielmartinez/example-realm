@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppRealm.Views.RegisterPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}"/>
+        <ToolbarItem Text="Cancelar" Command="{Binding CancelCommand}" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <Grid Padding="5" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label
+                Text="Formulario de Registro"
+                FontSize="Large"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                TextColor="Black"/>
+            <Frame Grid.Row="1" CornerRadius="30">
+                <StackLayout Orientation="Vertical">
+                    <Label
+                        Margin="10,0,0,0"
+                        Text="Nombre"
+                        FontSize="Medium"
+                        FontAttributes="Bold"/>
+                    <Entry
+                        Text="{Binding Name}"
+                        Placeholder="Escriba su nombre"/>
+                    <Label
+                        Text="Usuario"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        Margin="10,0,0,0"/>
+                    <Entry
+                        Text="{Binding UserName}"
+                        Placeholder="Escriba su Nombre de Usuario"/>
+                    <Label 
+                        Text="Contraseña"
+                        FontSize="Medium"
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"/>
+                    <Entry
+                        Text="{Binding Password}"
+                        Placeholder="Escriba su Contraseña"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
