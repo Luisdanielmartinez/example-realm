@@ -30,7 +30,7 @@ namespace AppRealm.ViewModels
                 return;
             }
 
-            await App.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new AppShell()));
+            App.Current.MainPage=new AppShell();
         }
 
         public async void goToRegister()

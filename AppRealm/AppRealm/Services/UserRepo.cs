@@ -21,6 +21,10 @@ namespace AppRealm.Services
 
         public async Task<bool> AddItemAsync(User item)
         {
+            if (item==null)
+            {
+               return await Task.FromResult(false);
+            }
 
             db.Write(() =>
             {

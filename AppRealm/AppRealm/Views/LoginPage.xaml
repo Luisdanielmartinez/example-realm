@@ -25,7 +25,7 @@
                            FontSize="Medium" 
                            FontAttributes="Bold"/>
                     <Entry Text="{Binding UserName}"
-                           Placeholder="Escribae el usuario"/>
+                           Placeholder="Escriba el usuario"/>
                     <Label Text="Contraseña"
                            Margin="10,0,0,0"
                            FontSize="Medium"

@@ -15,7 +15,7 @@ namespace AppRealm.ViewModels
         public string Password { get; set; }
 
         public ICommand SaveCommand => new RelayCommand(saveData);
-        public ICommand CancelCommand => new RelayCommand(saveData);
+        public ICommand CancelCommand => new RelayCommand(Cancel);
         public RegisterViewModel()
         {
            
